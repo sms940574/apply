@@ -253,7 +253,9 @@
   .duo{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:12px}
   .duo .game{border:2px solid var(--neon);border-radius:20px;padding:16px;background:#fff;box-shadow:6px 6px 0 var(--aqua);display:flex;flex-direction:column;gap:8px;align-items:flex-start}
   .duo .game:nth-child(2){box-shadow:6px 6px 0 var(--pink)}
-  .duo .game .vid{width:100%}
+  .duo .game .vid,.duo .game figure{width:100%}
+  .duo .game figure{aspect-ratio:4/3}.duo .game figure img{object-fit:cover}
+  .duo .game .note{font-size:12.5px;opacity:.75}
   .duo .game h4{font-family:"Unbounded",sans-serif;font-weight:800;font-size:24px;letter-spacing:-.03em}
   @media (max-width:900px){.facts,.docs{grid-template-columns:1fr 1fr}.facts div:nth-child(2){border-right:0}.duo{grid-template-columns:1fr}}
   @media (max-width:600px){.growth{grid-template-columns:1fr}.growth .wide{grid-column:auto}}
@@ -289,7 +291,7 @@
     </div>
   </div>
   <div class="collage">
-    <figure class="a"><img src="https://sms940574.github.io/portfolio/img/rrr-key.jpg" alt="RRR × FFF key visual"><span class="stamp">FFF × RRR ★ 2026</span></figure>
+    <figure class="a"><video autoplay muted loop playsinline preload="metadata" src="https://sms940574.github.io/portfolio/video/ex-mainposter.mp4"></video><span class="stamp">FFF × RRR ★ 2026</span></figure>
     <figure class="p"><video autoplay muted loop playsinline preload="metadata" src="media/black-friday.mp4"></video></figure>
     <figure class="p"><video autoplay muted loop playsinline preload="metadata" src="media/logo3d.mp4"></video></figure>
   </div>
@@ -413,15 +415,47 @@
   </div>
   <div class="links-row reveal"><a class="btn" href="https://rrrxfff.nbing.net" target="_blank">▶ Play the game</a><a class="btn ghost" href="https://sms940574.github.io/portfolio/#rrr" target="_blank">Full case study ↗</a></div>
   <div class="masonry" style="margin-top:22px">
-    <div class="vid"><video autoplay muted loop playsinline preload="metadata" src="https://sms940574.github.io/portfolio/video/ex-front.mp4"></video></div>
-    <div class="vid"><video autoplay muted loop playsinline preload="metadata" src="https://sms940574.github.io/portfolio/video/adventure-only.mp4"></video></div>
-    <figure><img loading="lazy" src="https://sms940574.github.io/portfolio/img/store-front.jpg" alt="FFF storefront"><figcaption>FFF, Seoul</figcaption></figure>
-    <div class="vid"><video autoplay muted loop playsinline preload="metadata" src="https://sms940574.github.io/portfolio/video/insta-2.mp4"></video></div>
-    <figure><img loading="lazy" src="https://sms940574.github.io/portfolio/img/face-bubu.jpg" alt="Face tracking"><figcaption>Face tracking</figcaption></figure>
-    <figure><img loading="lazy" src="https://sms940574.github.io/portfolio/img/rrr-sign.jpg" alt="Bubble installation"><figcaption>Bubble pop</figcaption></figure>
+    <div class="vid"><video autoplay muted loop playsinline preload="metadata" src="media/g-ex-front.mp4"></video></div>
+    <figure><img loading="lazy" src="media/g-render-bubu.jpg" alt="Character BuBu"></figure>
+    <figure><img loading="lazy" src="media/g-rrr-wall.jpg" alt="The store as a game level"></figure>
+    <figure><img loading="lazy" src="media/g-store-front.jpg" alt="FFF storefront"><figcaption>FFF, Seoul</figcaption></figure>
+    <div class="vid"><video autoplay muted loop playsinline preload="metadata" src="media/g-adventure-only.mp4"></video></div>
+    <figure><img loading="lazy" src="media/g-render-pipi.jpg" alt="Character PiPi"></figure>
     <div class="vid"><video autoplay muted loop playsinline preload="metadata" src="https://sms940574.github.io/portfolio/video/ex-mainposter.mp4"></video></div>
-    <figure><img loading="lazy" src="https://sms940574.github.io/portfolio/img/rrr-wall.jpg" alt="The store as a game level"><figcaption>The real store as the track</figcaption></figure>
-    <div class="vid"><video autoplay muted loop playsinline preload="metadata" src="https://sms940574.github.io/portfolio/video/ex-door.mp4"></video></div>
+    <div class="vid"><video autoplay muted loop playsinline preload="metadata" src="https://sms940574.github.io/portfolio/video/ex-pillar.mp4"></video></div>
+    <figure><img loading="lazy" src="media/g-face-bubu.jpg" alt="Face tracking"><figcaption>Face tracking</figcaption></figure>
+    <figure><img loading="lazy" src="media/g-rrr-key.jpg" alt="Key visual"></figure>
+    <div class="vid"><video autoplay muted loop playsinline preload="metadata" src="media/g-ex-door.mp4"></video></div>
+    <figure><img loading="lazy" src="media/g-render-popo.jpg" alt="Character PoPo"></figure>
+    <figure><img loading="lazy" src="media/g-rrr-hanger.jpg" alt="Racks in the game"></figure>
+    <figure><img loading="lazy" src="media/g-store-inside.jpg" alt="FFF store interior"><figcaption>The real store</figcaption></figure>
+    <div class="vid"><video autoplay muted loop playsinline preload="metadata" src="media/g-insta-2.mp4"></video></div>
+    <figure><img loading="lazy" src="media/g-render-ringring.jpg" alt="Character RingRing"></figure>
+    <figure><img loading="lazy" decoding="async" src="https://sms940574.github.io/portfolio/img/store-display.jpg" alt="In-store display"><figcaption>In the store</figcaption></figure>
+    <figure><img loading="lazy" decoding="async" src="https://sms940574.github.io/portfolio/img/shot-adv1.jpg" alt="Adventure mode"></figure>
+    <figure><img loading="lazy" decoding="async" src="https://sms940574.github.io/portfolio/img/render-ringring.jpg" alt="Character RingRing"></figure>
+    <figure><img loading="lazy" src="media/g-rrr-sign.jpg" alt="Bubble installation"><figcaption>Bubble pop</figcaption></figure>
+    <figure><img loading="lazy" src="media/g-face-pipi.jpg" alt="Face tracking"></figure>
+    <figure><img loading="lazy" src="media/g-dwu-title.jpg" alt="Don't Wake Up title"><figcaption>Don't Wake Up</figcaption></figure>
+    <figure><img loading="lazy" src="media/g-dwu-char2.jpg" alt="Main character"></figure>
+    <div class="vid"><video autoplay muted loop playsinline preload="metadata" src="media/g-dwu-play4.mp4"></video></div>
+    <figure><img loading="lazy" src="media/g-dwu-room.jpg" alt="Dream room"></figure>
+    <figure><img loading="lazy" src="media/g-dwu-wings.jpg" alt="Wing items"></figure>
+    <figure><img loading="lazy" src="media/g-dwu-env.jpg" alt="Environment"></figure>
+    <figure><img loading="lazy" src="media/g-dwu-objects.jpg" alt="Objects"></figure>
+    <div class="vid"><video autoplay muted loop playsinline preload="metadata" src="media/g-fallingdream.mp4"></video></div>
+    <figure><img loading="lazy" src="media/g-dwu-furniture.jpg" alt="Furniture"></figure>
+    <figure><img loading="lazy" src="media/g-dwu-glasses.jpg" alt="Glasses vision"></figure>
+    <figure><img loading="lazy" src="media/g-dwu-ui.jpg" alt="UI design"></figure>
+    <figure><img loading="lazy" src="media/g-dwu-nature.jpg" alt="Nature set"></figure>
+    <figure><img loading="lazy" src="media/g-dwu-board.jpg" alt="Mood board"></figure>
+    <figure><img loading="lazy" src="media/g-dwu-hero.jpg" alt="Opening scene"></figure>
+  </div>
+  <h3 class="sub serif reveal">Try the interactions</h3>
+  <p class="subp reveal">Two browser installations ran in the store. They need only a webcam and a link, so visitors play, film it and post it.</p>
+  <div class="duo reveal">
+    <div class="game"><figure><img loading="lazy" decoding="async" src="https://sms940574.github.io/portfolio/img/face-bubu.jpg" alt="Face tracking"></figure><span class="mono">Interaction 01</span><h4>Face tracking</h4><p>Your facial expression is mirrored onto a game character in real time.</p><a class="btn ghost" href="https://eunseojung422-commits.github.io/face-puppet/" target="_blank">Try it (webcam) ↗</a><p class="note">Takes about 30 seconds to load. Then allow camera access.</p></div>
+    <div class="game"><figure><img loading="lazy" decoding="async" src="https://sms940574.github.io/portfolio/img/rrr-sign.jpg" alt="Bubble pop"></figure><span class="mono">Interaction 02</span><h4>Bubble pop</h4><p>FFF's slogan "for family and friends" floats as glass bubbles. Reach out with your hand to pop them.</p><a class="btn ghost" href="https://sms940574.github.io/bubble-interaction/Final_Bubble.html" target="_blank">Try it ↗</a></div>
   </div>
   <h3 class="sub serif reveal">Planned before it was built</h3>
   <p class="subp reveal">Pages from my 29-page planning deck (in Korean): concept, the online-to-offline loop, the player journey and the roadmap.</p>
