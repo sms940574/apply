@@ -1,0 +1,6 @@
+# 인터넷에 안 올라가는 개인 파일
+*.txt
+*.md
+*원본*
+.DS_Store
+Mirelo/Misuk_Seo_CV.pdf
